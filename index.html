@@ -10653,7 +10653,7 @@ return result;
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210210201827275" list="[[3 February 2021]] [[Acaraian Equipment]] [[Party Equipment]] [[Party XP]]" modified="20210210201844412" title="$:/StoryList">
+<div created="20210210201827275" list="Links [[3 February 2021]] [[Acaraian Equipment]] [[Party Equipment]] [[Party XP]]" modified="20210210224807275" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210123011358732" modified="20210123011615779" title="$:/theme">
@@ -11276,8 +11276,11 @@ sum of cost of all equipment:
 
 ! Cash</pre>
 </div>
-<div created="20210128003247938" modified="20210128003723218" tags="" title="Party XP">
-<pre>{{{[tag[Journal]get[xp]sum[]]}}}</pre>
+<div created="20210128003247938" modified="20210210225356217" tags="" title="Party XP">
+<pre>* TOTAL XP FOR CAMPAIGN {{{[tag[Journal]get[xp]sum[]]}}}
+* Level {{{[tag[Journal]get[xp]sum[]divide[1000]ceil[1]]}}}
+* XP into level: {{{[tag[Journal]get[xp]sum[]remainder[1000]]}}}
+</pre>
 </div>
 <div created="20210201233328608" modified="20210202034352761" tags="familiar" title="Prince">
 <pre>&quot;Ferocious Bleeding Death in the Night&quot; but also known by Prince.
