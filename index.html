@@ -243,8 +243,6 @@ Error message and password prompt
 
 <li>Crafting</li>
 
-<li>Draft of 'New Tiddler 1'</li>
-
 <li>Draft of 'Party XP'</li>
 
 <li>Equipment</li>
@@ -260,6 +258,8 @@ Error message and password prompt
 <li>Herbalist</li>
 
 <li>Horizon Walker</li>
+
+<li>Inventory</li>
 
 <li>Linguist</li>
 
@@ -10677,7 +10677,7 @@ return result;
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210226013033793" list="H3 H2 H1 [[Draft of 'New Tiddler 1']] Links [[Acaraian Level 3]] [[Acaraian Level 2]] Acaraian [[Party Equipment]] [[Draft of 'Party XP']]" modified="20210226030942364" title="$:/StoryList">
+<div created="20210226013033793" list="H3 H2 H1 Inventory Links [[Acaraian Level 3]] [[Acaraian Level 2]] Acaraian [[Party Equipment]] [[Draft of 'Party XP']]" modified="20210226030942364" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210123011358732" modified="20210123011615779" title="$:/theme">
@@ -11520,9 +11520,6 @@ Raw materials worth 1/2 cost spent with Crafting check after 4 days.
 
 Additional days can be spent to reduce the costs further.  At any time the remaining cost can be spent to finish immediately.</pre>
 </div>
-<div created="20210226032303264" draft.of="New Tiddler 1" draft.title="Inventory" gp="300" modified="20210226033824242" tags="" title="Draft of 'New Tiddler 1'">
-<pre>&lt;$link&gt;&lt;$view field=&quot;title&quot;&gt;&lt;/$view&gt;&lt;/$link&gt;</pre>
-</div>
 <div created="20210128003247938" draft.of="Party XP" draft.title="Party XP" modified="20210226032449266" tags="" title="Draft of 'Party XP'">
 <pre>|TOTAL XP FOR CAMPAIGN |{{{[tag[Journal]get[xp]sum[]]}}} |
 |Level| {{{[tag[Journal]get[xp]sum[]divide[1000]ceil[1]]}}}|
@@ -11580,6 +11577,11 @@ at sixth level gain an endemic herbs as an additive.</pre>
 * 6th gain Scout activity even when doing other activities
 * 10th Magical adaptation grants darkness, spider climb, and water breathing as innate primal spells (1/day)
 </pre>
+</div>
+<div created="20210226032303264" gp="300" modified="20210226034256441" tags="Journal" title="Inventory">
+<pre>&lt;$link&gt;&lt;$view field=&quot;title&quot;&gt;&lt;/$view&gt;&lt;/$link&gt;
+
+{{||H3}}</pre>
 </div>
 <div created="20210201031928605" modified="20210201032505113" tags="archetype" title="Linguist">
 <pre>https://2e.aonprd.com/Archetypes.aspx?ID=64
