@@ -10777,7 +10777,7 @@ return result;
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210311144658718" list="[[10 March 2021]] [[Party Equipment]] [[Party XP]]" modified="20210311144658718" title="$:/StoryList">
+<div created="20210311144658718" list="Links [[Party Equipment]] [[Party XP]]" modified="20210311145426748" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210123011358732" modified="20210123011615779" title="$:/theme">
@@ -12168,11 +12168,20 @@ held by {{!!holder}} value {{!!gp}}gp</pre>
 
 {{||loot-trailer}}</pre>
 </div>
-<div created="20210128003247938" modified="20210226034909545" tags="" title="Party XP">
-<pre>|TOTAL XP FOR CAMPAIGN |{{{[tag[Journal]get[xp]sum[]]}}} |
-|Level| {{{[tag[Journal]get[xp]sum[]divide[1000]ceil[1]]}}}|
-|XP into level| {{{[tag[Journal]get[xp]sum[]remainder[1000]]}}}|
-</pre>
+<div created="20210128003247938" modified="20210311150448739" tags="" title="Party XP">
+<pre>&lt;$formula-vars 
+currxp = [tag[Journal]get[xp]sum[]]
+currlev = [tag[Journal]get[xp]sum[]divide[1000]ceil[1]]
+intolev = [tag[Journal]get[xp]sum[]remainder[1000]]
+&gt;
+
+
+
+|TOTAL XP FOR CAMPAIGN |&lt;&lt;currxp&gt;&gt;|
+|Level| &lt;&lt;currlev&gt;&gt;|
+|XP into level| &lt;&lt;intolev&gt;&gt;|
+|XP to next level| (= 1000-&lt;&lt;intolev&gt;&gt; =)|
+&lt;/$formula-vars&gt;</pre>
 </div>
 <div created="20210226043512267" date="3 February 2021" gp="12" holder="Acaraian" modified="20210226043825078" tags="Loot" title="pouch of greater healing powders">
 <pre>A pouch of greater healing powders Acaraian
